@@ -10,7 +10,7 @@ public class Books {
 	@Id
 	@GeneratedValue
 	private long id;
-	private String bookName;
+	private String name;
 	private String bookAuthor;
 	private String bookDescription;
 	private double bookPrice;
@@ -21,10 +21,10 @@ public class Books {
 	
 	
 
-	public Books(long id, String bookName, String bookAuthor, String bookDescription, double bookPrice) {
+	public Books(long id, String name, String bookAuthor, String bookDescription, double bookPrice) {
 		super();
 		this.id = id;
-		this.bookName = bookName;
+		this.name = name;
 		this.bookAuthor = bookAuthor;
 		this.bookDescription = bookDescription;
 		this.bookPrice = bookPrice;
@@ -41,11 +41,11 @@ public class Books {
 	}
 
 	public String getBookName() {
-		return bookName;
+		return name;
 	}
 
-	public void setBookName(String bookName) {
-		this.bookName = bookName;
+	public void setBookName(String name) {
+		this.name = name;
 	}
 
 	public String getBookAuthor() {
